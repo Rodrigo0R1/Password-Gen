@@ -1,0 +1,18 @@
+import random
+
+letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+numbers = "0123456789"
+
+symbols = "!@#$%^&*()_+-=[]|;:',.<>?/"
+
+chars = letters + numbers + symbols
+
+print("Your password: ")
+
+password = ""
+
+for x in range(16):
+    password += random.choice(chars)
+
+print(password)
